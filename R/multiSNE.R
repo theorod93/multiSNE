@@ -29,7 +29,7 @@
 #' X$first_dataView <- rbind(matrix(rnorm(10000),nrow=500,ncol=20), matrix(rnorm(5000, mean=1,sd=2),nrow=250,ncol=20))
 #' X$second_dataView <- rbind(matrix(rpois(20000, lambda = 1),nrow=500,40), matrix(rpois(10000, lambda=3),250,40))
 #' # Run multi-SNE
-#' Y <- multiSNE_weights(X)
+#' Y <- multiSNE(X)
 #' plot(Y$Y, col = c(rep(1,500), rep(2,250)))
 #' 
 
