@@ -206,7 +206,7 @@ SmultiSNE <- function (X, initial_config = NULL, k = 2, initial_dims = 30,
       w <- w/sum(w, na.rm=T)
     } else{
       w <- rep(1,M)
-      w <- w/sum(, na.rm=T)
+      w <- w/sum(w, na.rm=T)
     }
     Weights[iter,] <- w
     Errors[iter,] <- Ctemp
