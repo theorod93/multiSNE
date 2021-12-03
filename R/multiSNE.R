@@ -147,7 +147,7 @@ multiSNE <- function (X, initial_config = NULL, k = 2, initial_dims = 30,
       momentum = final_momentum
     }
     for (i in 1:length(X)){
-      C = sum(P[[i]]*log(P[[i]]/Q), na.rm=T)
+      C = w[i]*sum(P[[i]]*log(P[[i]]/Q), na.rm=T)
       if (is.na(C)){
         Ctemp[i] <- 0
       } else {
