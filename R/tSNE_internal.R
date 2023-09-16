@@ -16,7 +16,7 @@ Hbeta <- function(D, beta){
 }
 # Get Probability distribution (P) from data (X)
 x2p <- function(X, perplexity = 15, tol = 1e-05){
-  if (class(X) == "dist") {
+  if (any(class(X) %in% "dist")) {
     D = X
     n = attr(D, "Size")
   }else {
