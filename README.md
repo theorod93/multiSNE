@@ -11,3 +11,4 @@ Installation can be accomplished via [devtools](https://www.r-project.org/nosvn/
 devtools::install_github('theorod93/multiSNE')
 ```
 
+[![DOI](https://sandbox.zenodo.org/badge/349524137.svg)](https://sandbox.zenodo.org/doi/10.5072/zenodo.46219)
